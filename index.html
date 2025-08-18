@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
 </head>
 <body>
     <header>
@@ -16,9 +17,8 @@
         </nav>
     </header>
 
-    <h1>Cadastrar Tarefas</h1>
+    <h1>Registro de novas tarefas</h1>
 
-    <form action="">
         <label for="tarefa_nome">Nome da tarefa</label>
         <input type="text" id="tarefa_nome" name="tarefa_nome" placeholder="Ex:Arrumar a cama" required><br>
 
@@ -28,9 +28,7 @@
         <label for="tarefa_horario">Horário da tarefa</label>
         <input type="time" id="tarefa_horario" name="tarefa_horario" required>
         <br>
-        <button onclick="cadastrarTarefa()" type="submit">Enviar</button>
-    </form>
+        <button onclick="cadastrarTarefa()">Enviar</button>
 
-    <script src="assets/js/script.js"></script>
 </body>
 </html>
