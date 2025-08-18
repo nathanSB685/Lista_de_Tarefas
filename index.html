@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <l1><a href="index.html">Home</a></l1>
+                <l1><a href="lista.html">Lista</a></l1>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Cadastrar Tarefas</h1>
+
+    <form action="">
+        <label for="tarefa_nome">Nome da tarefa</label>
+        <input type="text" id="tarefa_nome" name="tarefa_nome" placeholder="Ex:Arrumar a cama" required><br>
+
+        <label for="tarefa_dia">Dia da tarefa</label>
+        <input type="number" id="tarefa_dia" name="tarefa_dia" required><br>
+
+        <label for="tarefa_horario">Horário da tarefa</label>
+        <input type="time" id="tarefa_horario" name="tarefa_horario" required>
+        <br>
+        <button onclick="cadastrarTarefa()" type="submit">Enviar</button>
+    </form>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
