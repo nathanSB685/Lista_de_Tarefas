@@ -5,6 +5,15 @@ class Tarefa {
         this.horario = horario
     }
 
+    validarDados() {
+        for(let i in this) {
+            if(this[i] == undefined || this[i] == '' || this[i] == null) {
+                return false
+            }
+        }
+        return true 
+    }
+
 }
 
 class Bd {
@@ -43,5 +52,13 @@ function cadastrarTarefa() {
         horario.value
     )
 
-    bd.gravar(tarefa)
+    if(tarefa.validarDados()) {
+        bd.gravar(tarefa)
+        alert('Sucesso!')
+        // dialogo de sucesso
+    }else {
+        alert('Erro')
+        //dialog de erro
+    }
+
 }
